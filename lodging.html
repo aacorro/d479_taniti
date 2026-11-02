@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Places to Stay | Visit Taniti</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+        <div class="container"><a class="brand" href="index.html">Visit Taniti</a>
+            <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="dining.html">Dining</a><a
+                    href="lodging.html" aria-current="page">Places to Stay</a><a href="activities.html">Activities</a><a
+                    href="transportation.html">Transportation</a><a href="faq.html">FAQ</a></nav>
+        </div>
+    </header>
+    <main class="container" id="main">
+        <h1>Places to Stay</h1>
+        <p class="intro">Choose the type of stay that works for your trip.</p>
+        <div class="grid two">
+            <section class="card">
+                <h2>Hotels</h2>
+                <p>There are many small, family-owned hotels.</p><a href="#request">Ask about hotels</a>
+            </section>
+            <section class="card">
+                <h2>Four-star resort</h2>
+                <p>Taniti has one large, four-star resort.</p><a href="#request">Ask about the resort</a>
+            </section>
+            <section class="card">
+                <h2>Bed and breakfasts</h2>
+                <p>The island has a growing number of bed and breakfasts.</p><a href="#request">Ask about bed and
+                    breakfasts</a>
+            </section>
+            <section class="card">
+                <h2>Hostel</h2>
+                <p>An inexpensive hostel is available for visitors.</p><a href="#request">Ask about the hostel</a>
+            </section>
+        </div>
+        <section class="card">
+            <h2>Planning your stay</h2>
+            <p>All lodging is regulated and regularly inspected by the Tanitian government. Specific prices,
+                availability, and provider booking links were not supplied. Confirm these details with your chosen
+                provider before traveling.</p>
+        </section>
+        <section class="card" id="request">
+            <h2>Stay inquiry</h2>
+            <p>This practice form shows how a stay inquiry would work. It does not contact a hotel or make a
+                reservation.</p>
+            <form id="stay-form">
+                <label for="stay">Type of stay</label><select id="stay" required>
+                    <option value="">Choose a type</option>
+                    <option>Hotel</option>
+                    <option>Four-star resort</option>
+                    <option>Bed and breakfast</option>
+                    <option>Hostel</option>
+                </select>
+                <label for="arrival">Arrival date</label><input id="arrival" type="date" required>
+                <label for="guests">Number of guests</label><input id="guests" type="number" min="1" max="50" value="1"
+                    required>
+                <button type="submit">Preview inquiry</button>
+            </form>
+            <p id="confirmation" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Visit Taniti</p>
+
+            <p>
+                <a href="index.html">Home</a> ·
+                <a href="faq.html">Visitor information</a>
+            </p>
+
+            <div class="credits">
+                <p>
+                    Island information: Western Governors University,
+                    <cite>About the Island</cite> (n.d.).
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
