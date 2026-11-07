@@ -102,6 +102,15 @@ p {
     gap: 18px;
 }
 
+.page-photo {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+}
+
 .grid.two {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
